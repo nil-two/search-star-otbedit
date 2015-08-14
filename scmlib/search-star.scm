@@ -37,12 +37,10 @@
       (editor-search-selected)
       (editor-search-current-word)))
 
-  (define default-search-star-key "Ctrl+:")
-
   (define search-star-key
     (if (symbol-bound? 'search-star-key)
       search-star-key
-      default-search-star-key))
+      "Ctrl+:"))
 
   (app-set-key
     search-star-key
