@@ -23,19 +23,19 @@
   (define (sand-with-boundary str)
     (string-append "\\b" str "\\b"))
 
-  (define (editor-search-selected)
+  (define (search-selected)
     (editor-search-string
       (sand-with-boundary (editor-get-selected-string))))
 
-  (define (editor-search-current-word)
+  (define (search-current-word)
     (let ((word (current-word)))
       (if (not (string=? word ""))
         (editor-search-string (sand-with-boundary word)))))
 
-  (define (editor-star-search)
+  (define (search-star)
     (if (editor-get-selected-area)
-      (editor-search-selected)
-      (editor-search-current-word)))
+      (search-selected)
+      (search-current-word)))
 
   (define search-star-key
     (if (symbol-bound? 'search-star-key)
@@ -44,6 +44,6 @@
 
   (app-set-key
     search-star-key
-    editor-star-search))
+    search-star))
 
 (load-wara-search-star)
