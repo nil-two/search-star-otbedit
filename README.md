@@ -4,6 +4,35 @@ search-star-OTBEdit
 search-star-OTBEdit is a macro for [OTBEdit](http://www.hi-ho.ne.jp/a_ogawa/otbedit/).
 This macro provides a search method.
 
+Usage
+-----
+
+1. current buffer is next
+
+```
+ [[plugins]]
+|repository = 'ctrlpvim/ctrlp.vim'
+
+ [[plugins]]
+ repository = 'Shougo/neocomplete.vim'
+```
+
+(Cursor is in |)
+
+2. hit `Ctrl+Space`
+
+3. cursor will jump to next `repository`
+
+```
+ [[plugins]]
+ repository = 'ctrlpvim/ctrlp.vim'
+
+ [[plugins]]
+|repository = 'Shougo/neocomplete.vim'
+```
+
+(Cursor is in |)
+
 Installation
 ------------
 
@@ -38,6 +67,6 @@ License
 MIT License
 
 Author
-
 ------
+
 kusabashira <kusabashira227@gmail.com>
