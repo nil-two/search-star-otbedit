@@ -1,4 +1,4 @@
-(define (load-kusabashira-search-star)
+(define (load-nil2-search-star)
   (define (current-line)
     (editor-get-row-string (editor-get-cur-row)))
 
@@ -46,4 +46,4 @@
     search-star-key
     search-star))
 
-(load-kusabashira-search-star)
+(load-nil2-search-star)

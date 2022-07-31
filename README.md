@@ -36,7 +36,7 @@ Usage
 Installation
 ------------
 
-1. download `search-star-otbedit.zip` from the [releases page](https://github.com/kusabashira/search-star-otbedit/releases)
+1. download `search-star-otbedit.zip` from the [releases page](https://github.com/nil2nekoni/search-star-otbedit/releases)
 
 2. Unpack the zip file, and put all in your `OTBEdit directory`.
 
@@ -69,4 +69,4 @@ MIT License
 Author
 ------
 
-kusabashira <kusabashira227@gmail.com>
+nil2 <nil2@nil2.org>
